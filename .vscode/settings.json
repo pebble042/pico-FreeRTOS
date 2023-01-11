@@ -1,0 +1,9 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/examples",
+    "cmake.environment": {
+        "FREERTOS_KERNEL_PATH": "D:\\pico\\pico-FreeRTOS\\Source"
+    },
+    "cmake.touchbar.advanced": {
+    
+    }
+}
