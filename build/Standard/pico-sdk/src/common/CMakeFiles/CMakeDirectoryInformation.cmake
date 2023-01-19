@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "D:/pico/pico-sdk")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "D:/pico/pico-FreeRTOS/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "D:/pico/pico-FreeRTOS-SMP/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

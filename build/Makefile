@@ -66,10 +66,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS\examples
+CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS-SMP\examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS\build
+CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS-SMP\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS\build\CMakeFiles D:\pico\pico-FreeRTOS\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles D:\pico\pico-FreeRTOS-SMP\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -233,17 +233,17 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
 #=============================================================================
-# Target rules for targets named ex1_create_task
+# Target rules for targets named example1
 
 # Build rule for target.
-ex1_create_task: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex1_create_task
-.PHONY : ex1_create_task
+example1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 example1
+.PHONY : example1
 
 # fast build rule for target.
-ex1_create_task/fast:
-	$(MAKE) $(MAKESILENT) -f EX1_Create_Task\CMakeFiles\ex1_create_task.dir\build.make EX1_Create_Task/CMakeFiles/ex1_create_task.dir/build
-.PHONY : ex1_create_task/fast
+example1/fast:
+	$(MAKE) $(MAKESILENT) -f Task_Management\CMakeFiles\example1.dir\build.make Task_Management/CMakeFiles/example1.dir/build
+.PHONY : example1/fast
 
 # Help Target
 help:
@@ -260,7 +260,7 @@ help:
 	@echo ... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 	@echo ... cyw43_firmware_package
 	@echo ... bs2_default
-	@echo ... ex1_create_task
+	@echo ... example1
 	@echo ... main_blinky
 .PHONY : help
 

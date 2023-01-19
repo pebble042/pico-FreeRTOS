@@ -9,6 +9,6 @@ include(pico_sdk_import.cmake)
 PROJECT(examples)
 
 add_subdirectory(Standard)
-add_subdirectory(EX1_Create_Task)
+add_subdirectory(Task_Management)
 
 

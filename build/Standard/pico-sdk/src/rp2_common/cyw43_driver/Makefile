@@ -66,10 +66,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS\examples
+CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS-SMP\examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS\build
+CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS-SMP\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,14 +98,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d D:\pico\pico-FreeRTOS\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS\build\CMakeFiles D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver\\CMakeFiles\progress.marks
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS\build\CMakeFiles 0
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver\\CMakeFiles\progress.marks
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/clean
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -115,22 +115,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/preinstall
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/preinstall
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d D:\pico\pico-FreeRTOS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/rule:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/rule
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/rule
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/rule
 
 # Convenience name for target.
@@ -140,12 +140,12 @@ PioasmBuild: Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuil
 
 # fast build rule for target.
 PioasmBuild/fast:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\PioasmBuild.dir\build.make Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/build
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\PioasmBuild.dir\build.make Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/build
 .PHONY : PioasmBuild/fast
 
 # Convenience name for target.
 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/rule:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/rule
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/rule
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ cyw43_firmware_package: Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles
 
 # fast build rule for target.
 cyw43_firmware_package/fast:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_firmware_package.dir\build.make Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_firmware_package.dir\build.make Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
 .PHONY : cyw43_firmware_package/fast
 
 # Convenience name for target.
 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
 
 # Convenience name for target.
@@ -170,7 +170,7 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: Standard/pico-sdk/src/rp2_common/cyw
 
 # fast build rule for target.
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
 # Help Target
@@ -195,6 +195,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d D:\pico\pico-FreeRTOS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

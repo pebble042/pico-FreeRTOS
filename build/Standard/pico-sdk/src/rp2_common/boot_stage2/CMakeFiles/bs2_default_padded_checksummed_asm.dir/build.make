@@ -61,10 +61,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS\examples
+CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS-SMP\examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS\build
+CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS-SMP\build
 
 # Utility rule file for bs2_default_padded_checksummed_asm.
 
@@ -75,12 +75,12 @@ Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_check
 
 
 Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S: Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\boot_stage2 && C:\Users\ployy\AppData\Local\Programs\Python\Python310\python.exe D:/pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff D:/pico/pico-FreeRTOS/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin D:/pico/pico-FreeRTOS/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\boot_stage2 && C:\Users\ployy\AppData\Local\Programs\Python\Python310\python.exe D:/pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff D:/pico/pico-FreeRTOS-SMP/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin D:/pico/pico-FreeRTOS-SMP/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 
 Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\boot_stage2 && "D:\pico\armcc\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Obinary D:/pico/pico-FreeRTOS/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf D:/pico/pico-FreeRTOS/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\boot_stage2 && "D:\pico\armcc\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Obinary D:/pico/pico-FreeRTOS-SMP/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf D:/pico/pico-FreeRTOS-SMP/build/Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 bs2_default_padded_checksummed_asm: Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm
 bs2_default_padded_checksummed_asm: Standard/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -95,10 +95,10 @@ Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_check
 .PHONY : Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
 
 Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean:
-	cd /d D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles\bs2_default_padded_checksummed_asm.dir\cmake_clean.cmake
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles\bs2_default_padded_checksummed_asm.dir\cmake_clean.cmake
 .PHONY : Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean
 
 Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS\examples D:\pico\pico-sdk\src\rp2_common\boot_stage2 D:\pico\pico-FreeRTOS\build D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\boot_stage2 D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS-SMP\examples D:\pico\pico-sdk\src\rp2_common\boot_stage2 D:\pico\pico-FreeRTOS-SMP\build D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\boot_stage2 D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Standard/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 

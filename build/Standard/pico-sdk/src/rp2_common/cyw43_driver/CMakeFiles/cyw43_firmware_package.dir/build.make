@@ -61,10 +61,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS\examples
+CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS-SMP\examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS\build
+CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS-SMP\build
 
 # Utility rule file for cyw43_firmware_package.
 
@@ -75,8 +75,8 @@ Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package:
 
 
 Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o: D:/pico/pico-sdk/lib/cyw43-driver/firmware/43439A0-7.95.49.00.combined
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_resource.o"
-	cd /d D:\pico\pico-sdk\lib\cyw43-driver\firmware && "D:\pico\armcc\10 2021.10\bin\arm-none-eabi-objcopy.exe" -I binary -O elf32-littlearm -B arm --readonly-text --rename-section .data=.big_const,contents,alloc,load,readonly,data --redefine-sym _binary_43439A0_7_95_49_00_combined_start=fw_43439A0_7_95_49_00_start --redefine-sym _binary_43439A0_7_95_49_00_combined_end=fw_43439A0_7_95_49_00_end --redefine-sym _binary_43439A0_7_95_49_00_combined_size=fw_43439A0_7_95_49_00_size 43439A0-7.95.49.00.combined D:/pico/pico-FreeRTOS/build/Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_resource.o"
+	cd /d D:\pico\pico-sdk\lib\cyw43-driver\firmware && "D:\pico\armcc\10 2021.10\bin\arm-none-eabi-objcopy.exe" -I binary -O elf32-littlearm -B arm --readonly-text --rename-section .data=.big_const,contents,alloc,load,readonly,data --redefine-sym _binary_43439A0_7_95_49_00_combined_start=fw_43439A0_7_95_49_00_start --redefine-sym _binary_43439A0_7_95_49_00_combined_end=fw_43439A0_7_95_49_00_end --redefine-sym _binary_43439A0_7_95_49_00_combined_size=fw_43439A0_7_95_49_00_size 43439A0-7.95.49.00.combined D:/pico/pico-FreeRTOS-SMP/build/Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
 
 cyw43_firmware_package: Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package
 cyw43_firmware_package: Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
@@ -90,10 +90,10 @@ Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
 
 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/clean:
-	cd /d D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles\cyw43_firmware_package.dir\cmake_clean.cmake
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles\cyw43_firmware_package.dir\cmake_clean.cmake
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/clean
 
 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS\examples D:\pico\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS\build D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_firmware_package.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS-SMP\examples D:\pico\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS-SMP\build D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_firmware_package.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/depend
 

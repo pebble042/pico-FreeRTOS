@@ -66,10 +66,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS\examples
+CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS-SMP\examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS\build
+CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS-SMP\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,14 +98,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d D:\pico\pico-FreeRTOS\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS\build\CMakeFiles D:\pico\pico-FreeRTOS\build\Standard\\CMakeFiles\progress.marks
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS\build\CMakeFiles 0
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles D:\pico\pico-FreeRTOS-SMP\build\Standard\\CMakeFiles\progress.marks
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/clean
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/clean
 .PHONY : clean
 
 # The main clean target
@@ -115,22 +115,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/preinstall
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/preinstall
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d D:\pico\pico-FreeRTOS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Standard/CMakeFiles/main_blinky.dir/rule:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/CMakeFiles/main_blinky.dir/rule
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/CMakeFiles/main_blinky.dir/rule
 .PHONY : Standard/CMakeFiles/main_blinky.dir/rule
 
 # Convenience name for target.
@@ -140,12 +140,12 @@ main_blinky: Standard/CMakeFiles/main_blinky.dir/rule
 
 # fast build rule for target.
 main_blinky/fast:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/build
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/build
 .PHONY : main_blinky/fast
 
 # Convenience name for target.
 Standard/CMakeFiles/ELF2UF2Build.dir/rule:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/CMakeFiles/ELF2UF2Build.dir/rule
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Standard/CMakeFiles/ELF2UF2Build.dir/rule
 .PHONY : Standard/CMakeFiles/ELF2UF2Build.dir/rule
 
 # Convenience name for target.
@@ -155,251 +155,251 @@ ELF2UF2Build: Standard/CMakeFiles/ELF2UF2Build.dir/rule
 
 # fast build rule for target.
 ELF2UF2Build/fast:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\ELF2UF2Build.dir\build.make Standard/CMakeFiles/ELF2UF2Build.dir/build
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\ELF2UF2Build.dir\build.make Standard/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
-D_/pico/pico-FreeRTOS/Source/croutine.obj: D_/pico/pico-FreeRTOS/Source/croutine.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/croutine.obj: D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/croutine.obj
-
-# target to build an object file
-D_/pico/pico-FreeRTOS/Source/croutine.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/croutine.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/croutine.c.obj
-
-D_/pico/pico-FreeRTOS/Source/croutine.i: D_/pico/pico-FreeRTOS/Source/croutine.c.i
-
-.PHONY : D_/pico/pico-FreeRTOS/Source/croutine.i
-
-# target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/croutine.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/croutine.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/croutine.c.i
-
-D_/pico/pico-FreeRTOS/Source/croutine.s: D_/pico/pico-FreeRTOS/Source/croutine.c.s
-
-.PHONY : D_/pico/pico-FreeRTOS/Source/croutine.s
-
-# target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/croutine.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/croutine.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/croutine.c.s
-
-D_/pico/pico-FreeRTOS/Source/event_groups.obj: D_/pico/pico-FreeRTOS/Source/event_groups.c.obj
-
-.PHONY : D_/pico/pico-FreeRTOS/Source/event_groups.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/croutine.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/event_groups.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/event_groups.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/event_groups.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.obj
 
-D_/pico/pico-FreeRTOS/Source/event_groups.i: D_/pico/pico-FreeRTOS/Source/event_groups.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/croutine.i: D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/event_groups.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/croutine.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/event_groups.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/event_groups.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/event_groups.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.i
 
-D_/pico/pico-FreeRTOS/Source/event_groups.s: D_/pico/pico-FreeRTOS/Source/event_groups.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/croutine.s: D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/event_groups.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/croutine.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/event_groups.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/event_groups.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/event_groups.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/croutine.c.s
 
-D_/pico/pico-FreeRTOS/Source/list.obj: D_/pico/pico-FreeRTOS/Source/list.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/event_groups.obj: D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/list.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/event_groups.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/list.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/list.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/list.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.obj
 
-D_/pico/pico-FreeRTOS/Source/list.i: D_/pico/pico-FreeRTOS/Source/list.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/event_groups.i: D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/list.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/event_groups.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/list.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/list.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/list.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.i
 
-D_/pico/pico-FreeRTOS/Source/list.s: D_/pico/pico-FreeRTOS/Source/list.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/event_groups.s: D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/list.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/event_groups.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/list.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/list.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/list.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/event_groups.c.s
 
-D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.obj: D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/list.obj: D_/pico/pico-FreeRTOS-SMP/Source/list.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/list.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/list.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/list.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/list.c.obj
 
-D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.i: D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/list.i: D_/pico/pico-FreeRTOS-SMP/Source/list.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/list.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/list.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/list.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/list.c.i
 
-D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.s: D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/list.s: D_/pico/pico-FreeRTOS-SMP/Source/list.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/list.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/list.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/list.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/list.c.s
 
-D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.obj: D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.obj: D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.obj
 
-D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.i: D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.i: D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.i
 
-D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.s: D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.s: D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.c.s
 
-D_/pico/pico-FreeRTOS/Source/queue.obj: D_/pico/pico-FreeRTOS/Source/queue.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.obj: D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/queue.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/queue.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/queue.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/queue.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.obj
 
-D_/pico/pico-FreeRTOS/Source/queue.i: D_/pico/pico-FreeRTOS/Source/queue.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.i: D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/queue.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/queue.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/queue.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/queue.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.i
 
-D_/pico/pico-FreeRTOS/Source/queue.s: D_/pico/pico-FreeRTOS/Source/queue.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.s: D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/queue.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/queue.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/queue.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/queue.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.c.s
 
-D_/pico/pico-FreeRTOS/Source/stream_buffer.obj: D_/pico/pico-FreeRTOS/Source/stream_buffer.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/queue.obj: D_/pico/pico-FreeRTOS-SMP/Source/queue.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/stream_buffer.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/queue.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/stream_buffer.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/stream_buffer.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/stream_buffer.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/queue.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/queue.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/queue.c.obj
 
-D_/pico/pico-FreeRTOS/Source/stream_buffer.i: D_/pico/pico-FreeRTOS/Source/stream_buffer.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/queue.i: D_/pico/pico-FreeRTOS-SMP/Source/queue.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/stream_buffer.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/queue.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/stream_buffer.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/stream_buffer.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/stream_buffer.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/queue.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/queue.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/queue.c.i
 
-D_/pico/pico-FreeRTOS/Source/stream_buffer.s: D_/pico/pico-FreeRTOS/Source/stream_buffer.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/queue.s: D_/pico/pico-FreeRTOS-SMP/Source/queue.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/stream_buffer.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/queue.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/stream_buffer.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/stream_buffer.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/stream_buffer.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/queue.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/queue.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/queue.c.s
 
-D_/pico/pico-FreeRTOS/Source/tasks.obj: D_/pico/pico-FreeRTOS/Source/tasks.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.obj: D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/tasks.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/tasks.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/tasks.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/tasks.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.obj
 
-D_/pico/pico-FreeRTOS/Source/tasks.i: D_/pico/pico-FreeRTOS/Source/tasks.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.i: D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/tasks.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/tasks.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/tasks.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/tasks.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.i
 
-D_/pico/pico-FreeRTOS/Source/tasks.s: D_/pico/pico-FreeRTOS/Source/tasks.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.s: D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/tasks.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/tasks.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/tasks.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/tasks.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.c.s
 
-D_/pico/pico-FreeRTOS/Source/timers.obj: D_/pico/pico-FreeRTOS/Source/timers.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/tasks.obj: D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.obj
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/timers.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/tasks.obj
 
 # target to build an object file
-D_/pico/pico-FreeRTOS/Source/timers.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/timers.c.obj
-.PHONY : D_/pico/pico-FreeRTOS/Source/timers.c.obj
+D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.obj
 
-D_/pico/pico-FreeRTOS/Source/timers.i: D_/pico/pico-FreeRTOS/Source/timers.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/tasks.i: D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.i
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/timers.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/tasks.i
 
 # target to preprocess a source file
-D_/pico/pico-FreeRTOS/Source/timers.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/timers.c.i
-.PHONY : D_/pico/pico-FreeRTOS/Source/timers.c.i
+D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.i
 
-D_/pico/pico-FreeRTOS/Source/timers.s: D_/pico/pico-FreeRTOS/Source/timers.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/tasks.s: D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.s
 
-.PHONY : D_/pico/pico-FreeRTOS/Source/timers.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/tasks.s
 
 # target to generate assembly for a file
-D_/pico/pico-FreeRTOS/Source/timers.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS/Source/timers.c.s
-.PHONY : D_/pico/pico-FreeRTOS/Source/timers.c.s
+D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/tasks.c.s
+
+D_/pico/pico-FreeRTOS-SMP/Source/timers.obj: D_/pico/pico-FreeRTOS-SMP/Source/timers.c.obj
+
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/timers.obj
+
+# target to build an object file
+D_/pico/pico-FreeRTOS-SMP/Source/timers.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/timers.c.obj
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/timers.c.obj
+
+D_/pico/pico-FreeRTOS-SMP/Source/timers.i: D_/pico/pico-FreeRTOS-SMP/Source/timers.c.i
+
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/timers.i
+
+# target to preprocess a source file
+D_/pico/pico-FreeRTOS-SMP/Source/timers.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/timers.c.i
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/timers.c.i
+
+D_/pico/pico-FreeRTOS-SMP/Source/timers.s: D_/pico/pico-FreeRTOS-SMP/Source/timers.c.s
+
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/timers.s
+
+# target to generate assembly for a file
+D_/pico/pico-FreeRTOS-SMP/Source/timers.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-FreeRTOS-SMP/Source/timers.c.s
+.PHONY : D_/pico/pico-FreeRTOS-SMP/Source/timers.c.s
 
 D_/pico/pico-sdk/src/common/pico_sync/critical_section.obj: D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
@@ -407,7 +407,7 @@ D_/pico/pico-sdk/src/common/pico_sync/critical_section.obj: D_/pico/pico-sdk/src
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 D_/pico/pico-sdk/src/common/pico_sync/critical_section.i: D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -416,7 +416,7 @@ D_/pico/pico-sdk/src/common/pico_sync/critical_section.i: D_/pico/pico-sdk/src/c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 D_/pico/pico-sdk/src/common/pico_sync/critical_section.s: D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -425,7 +425,7 @@ D_/pico/pico-sdk/src/common/pico_sync/critical_section.s: D_/pico/pico-sdk/src/c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 D_/pico/pico-sdk/src/common/pico_sync/lock_core.obj: D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -434,7 +434,7 @@ D_/pico/pico-sdk/src/common/pico_sync/lock_core.obj: D_/pico/pico-sdk/src/common
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 D_/pico/pico-sdk/src/common/pico_sync/lock_core.i: D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -443,7 +443,7 @@ D_/pico/pico-sdk/src/common/pico_sync/lock_core.i: D_/pico/pico-sdk/src/common/p
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 D_/pico/pico-sdk/src/common/pico_sync/lock_core.s: D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -452,7 +452,7 @@ D_/pico/pico-sdk/src/common/pico_sync/lock_core.s: D_/pico/pico-sdk/src/common/p
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 D_/pico/pico-sdk/src/common/pico_sync/mutex.obj: D_/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -461,7 +461,7 @@ D_/pico/pico-sdk/src/common/pico_sync/mutex.obj: D_/pico/pico-sdk/src/common/pic
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 D_/pico/pico-sdk/src/common/pico_sync/mutex.i: D_/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -470,7 +470,7 @@ D_/pico/pico-sdk/src/common/pico_sync/mutex.i: D_/pico/pico-sdk/src/common/pico_
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 D_/pico/pico-sdk/src/common/pico_sync/mutex.s: D_/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -479,7 +479,7 @@ D_/pico/pico-sdk/src/common/pico_sync/mutex.s: D_/pico/pico-sdk/src/common/pico_
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 D_/pico/pico-sdk/src/common/pico_sync/sem.obj: D_/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -488,7 +488,7 @@ D_/pico/pico-sdk/src/common/pico_sync/sem.obj: D_/pico/pico-sdk/src/common/pico_
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 D_/pico/pico-sdk/src/common/pico_sync/sem.i: D_/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -497,7 +497,7 @@ D_/pico/pico-sdk/src/common/pico_sync/sem.i: D_/pico/pico-sdk/src/common/pico_sy
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 D_/pico/pico-sdk/src/common/pico_sync/sem.s: D_/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -506,7 +506,7 @@ D_/pico/pico-sdk/src/common/pico_sync/sem.s: D_/pico/pico-sdk/src/common/pico_sy
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 D_/pico/pico-sdk/src/common/pico_time/time.obj: D_/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -515,7 +515,7 @@ D_/pico/pico-sdk/src/common/pico_time/time.obj: D_/pico/pico-sdk/src/common/pico
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/time.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 D_/pico/pico-sdk/src/common/pico_time/time.i: D_/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -524,7 +524,7 @@ D_/pico/pico-sdk/src/common/pico_time/time.i: D_/pico/pico-sdk/src/common/pico_t
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_time/time.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/time.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_time/time.c.i
 
 D_/pico/pico-sdk/src/common/pico_time/time.s: D_/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -533,7 +533,7 @@ D_/pico/pico-sdk/src/common/pico_time/time.s: D_/pico/pico-sdk/src/common/pico_t
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_time/time.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/time.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_time/time.c.s
 
 D_/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -542,7 +542,7 @@ D_/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: D_/pico/pico-sdk/src/c
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 D_/pico/pico-sdk/src/common/pico_time/timeout_helper.i: D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -551,7 +551,7 @@ D_/pico/pico-sdk/src/common/pico_time/timeout_helper.i: D_/pico/pico-sdk/src/com
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 D_/pico/pico-sdk/src/common/pico_time/timeout_helper.s: D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -560,7 +560,7 @@ D_/pico/pico-sdk/src/common/pico_time/timeout_helper.s: D_/pico/pico-sdk/src/com
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 D_/pico/pico-sdk/src/common/pico_util/datetime.obj: D_/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -569,7 +569,7 @@ D_/pico/pico-sdk/src/common/pico_util/datetime.obj: D_/pico/pico-sdk/src/common/
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 D_/pico/pico-sdk/src/common/pico_util/datetime.i: D_/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -578,7 +578,7 @@ D_/pico/pico-sdk/src/common/pico_util/datetime.i: D_/pico/pico-sdk/src/common/pi
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 D_/pico/pico-sdk/src/common/pico_util/datetime.s: D_/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -587,7 +587,7 @@ D_/pico/pico-sdk/src/common/pico_util/datetime.s: D_/pico/pico-sdk/src/common/pi
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 D_/pico/pico-sdk/src/common/pico_util/pheap.obj: D_/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -596,7 +596,7 @@ D_/pico/pico-sdk/src/common/pico_util/pheap.obj: D_/pico/pico-sdk/src/common/pic
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 D_/pico/pico-sdk/src/common/pico_util/pheap.i: D_/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -605,7 +605,7 @@ D_/pico/pico-sdk/src/common/pico_util/pheap.i: D_/pico/pico-sdk/src/common/pico_
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 D_/pico/pico-sdk/src/common/pico_util/pheap.s: D_/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -614,7 +614,7 @@ D_/pico/pico-sdk/src/common/pico_util/pheap.s: D_/pico/pico-sdk/src/common/pico_
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 D_/pico/pico-sdk/src/common/pico_util/queue.obj: D_/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -623,7 +623,7 @@ D_/pico/pico-sdk/src/common/pico_util/queue.obj: D_/pico/pico-sdk/src/common/pic
 
 # target to build an object file
 D_/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 D_/pico/pico-sdk/src/common/pico_util/queue.i: D_/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -632,7 +632,7 @@ D_/pico/pico-sdk/src/common/pico_util/queue.i: D_/pico/pico-sdk/src/common/pico_
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/queue.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 D_/pico/pico-sdk/src/common/pico_util/queue.s: D_/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -641,7 +641,7 @@ D_/pico/pico-sdk/src/common/pico_util/queue.s: D_/pico/pico-sdk/src/common/pico_
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/queue.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : D_/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -650,7 +650,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: D_/pico/pico-sdk/src/r
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -659,7 +659,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: D_/pico/pico-sdk/src/rp2
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -668,7 +668,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: D_/pico/pico-sdk/src/rp2
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -677,7 +677,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: D_/pico/pico-sdk/src
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -686,7 +686,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: D_/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -695,7 +695,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: D_/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: D_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -704,7 +704,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: D_/pico/pico-sdk/s
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj: D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
@@ -713,7 +713,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj: D_/pico/pico-s
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i: D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
@@ -722,7 +722,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i: D_/pico/pico-sdk
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s: D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
@@ -731,7 +731,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s: D_/pico/pico-sdk
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -740,7 +740,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: D_/pico/pico-sdk/src/rp2
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -749,7 +749,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: D_/pico/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -758,7 +758,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: D_/pico/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -767,7 +767,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: D_/pico/pico-sdk/src/rp2_c
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -776,7 +776,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: D_/pico/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -785,7 +785,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: D_/pico/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -794,7 +794,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: D_/pico/pico
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -803,7 +803,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: D_/pico/pico-sdk/src/rp2_c
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -812,7 +812,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: D_/pico/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -821,7 +821,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: D_/pico/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -830,7 +830,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: D_/pico/pico-sdk/src/rp2
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -839,7 +839,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: D_/pico/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -848,7 +848,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: D_/pico/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -857,7 +857,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: D_/pico/pico-sdk/src/r
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -866,7 +866,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: D_/pico/pico-sdk/src/rp2
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -875,7 +875,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: D_/pico/pico-sdk/src/rp2
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -884,7 +884,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: D_/pico/pico-sdk/src/rp2
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -893,7 +893,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: D_/pico/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -902,7 +902,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: D_/pico/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -911,7 +911,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: D_/pico/pico-sdk/src/rp2
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -920,7 +920,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: D_/pico/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -929,7 +929,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: D_/pico/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -938,7 +938,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: D_/pico/pico-sdk
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -947,7 +947,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: D_/pico/pico-sdk/s
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -956,7 +956,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: D_/pico/pico-sdk/s
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -965,7 +965,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: D_/pico/pico-sdk/src/rp2
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -974,7 +974,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: D_/pico/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -983,7 +983,7 @@ D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: D_/pico/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: D_/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -992,7 +992,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: D_/pico/pico-sdk
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1001,7 +1001,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: D_/pico/pico-sdk/src/r
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1010,7 +1010,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: D_/pico/pico-sdk/src/rp2
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1019,7 +1019,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: D_/pico/pico-sdk/src/rp2
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: D_/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1028,7 +1028,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: D_/pico/pico-sdk/src/r
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: D_/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1037,7 +1037,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: D_/pico/pico-sdk/s
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1046,7 +1046,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: D_/pico/pico-sd
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1055,7 +1055,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: D_/pico/pico-sdk/
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1064,7 +1064,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: D_/pico/pico-sdk/
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1073,7 +1073,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: D_/pico/pico-sdk/sr
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1082,7 +1082,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: D_/pico/pico-sdk/src/
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1091,7 +1091,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: D_/pico/pico-sdk/src/
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: D_/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1100,7 +1100,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: D_/pico/pico
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: D_/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1109,7 +1109,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: D_/pico/pico-sdk/src
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1118,7 +1118,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: D_/pico/pico-sdk/
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1127,7 +1127,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: D_/pico/pico-sdk/sr
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1136,7 +1136,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: D_/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1145,7 +1145,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: D_/pico/pico-sdk/src/
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1154,7 +1154,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: D_/pico/pico-sdk/src/rp
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1163,7 +1163,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: D_/pico/pico-sdk/src/rp
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: D_/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1172,7 +1172,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: D_/pico/pico-s
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: D_/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1181,7 +1181,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: D_/pico
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1190,7 +1190,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: D_/pico/pico-sdk/sr
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1199,7 +1199,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: D_/pico/pico-sdk/src/
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1208,7 +1208,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: D_/pico/pico-sdk/src/
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: D_/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1217,7 +1217,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: D_/pico/pico-sdk
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
@@ -1226,7 +1226,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: D_/pico/pico-sdk/s
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
@@ -1235,7 +1235,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: D_/pico/pico-sdk/src
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
@@ -1244,7 +1244,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: D_/pico/pico-sdk/src
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1253,7 +1253,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: D_/pico/pico-sdk/src
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1262,7 +1262,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: D_/pico/pico-sdk/src/r
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1271,7 +1271,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: D_/pico/pico-sdk/src/r
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1280,7 +1280,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: D_/pico/pico-sdk/src/rp2
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1289,7 +1289,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: D_/pico/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1298,7 +1298,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: D_/pico/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1307,7 +1307,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: D_/pico/pico-sdk/src/r
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1316,7 +1316,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: D_/pico/pico-sdk/src/rp2
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1325,7 +1325,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: D_/pico/pico-sdk/src/rp2
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1334,7 +1334,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: D_/pico/pico
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1343,7 +1343,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: D_/pico/pico-s
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1352,7 +1352,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: D_/pico/pico-s
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: D_/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1361,7 +1361,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: D_/pico/pico-sdk/sr
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1370,7 +1370,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: D_/pico/pico-
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1379,7 +1379,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: D_/pico/pico-sd
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1388,7 +1388,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: D_/pico/pico-sd
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1397,7 +1397,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: D_/pico/pico-sdk/src/rp2_c
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1406,7 +1406,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: D_/pico/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1415,7 +1415,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: D_/pico/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1424,7 +1424,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: D_/pico/pico-sdk
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1433,7 +1433,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: D_/pico/pico-sdk/s
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1442,7 +1442,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: D_/pico/pico-sdk/s
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1451,7 +1451,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: D_/pico/pico-sdk/src/rp2
 
 # target to build an object file
 D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1460,7 +1460,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: D_/pico/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1469,7 +1469,7 @@ D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: D_/pico/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : D_/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 main.obj: main.c.obj
@@ -1478,7 +1478,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main.c.obj
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -1487,7 +1487,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main.c.i
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -1496,8 +1496,35 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /d D:\pico\pico-FreeRTOS\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main.c.s
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main.c.s
 .PHONY : main.c.s
+
+main_blinky.obj: main_blinky.c.obj
+
+.PHONY : main_blinky.obj
+
+# target to build an object file
+main_blinky.c.obj:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main_blinky.c.obj
+.PHONY : main_blinky.c.obj
+
+main_blinky.i: main_blinky.c.i
+
+.PHONY : main_blinky.i
+
+# target to preprocess a source file
+main_blinky.c.i:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main_blinky.c.i
+.PHONY : main_blinky.c.i
+
+main_blinky.s: main_blinky.c.s
+
+.PHONY : main_blinky.s
+
+# target to generate assembly for a file
+main_blinky.c.s:
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(MAKE) $(MAKESILENT) -f Standard\CMakeFiles\main_blinky.dir\build.make Standard/CMakeFiles/main_blinky.dir/main_blinky.c.s
+.PHONY : main_blinky.c.s
 
 # Help Target
 help:
@@ -1509,33 +1536,33 @@ help:
 	@echo ... rebuild_cache
 	@echo ... ELF2UF2Build
 	@echo ... main_blinky
-	@echo ... D_/pico/pico-FreeRTOS/Source/croutine.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/croutine.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/croutine.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/event_groups.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/event_groups.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/event_groups.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/list.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/list.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/list.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/portable/MemMang/heap_1.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/port.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/queue.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/queue.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/queue.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/stream_buffer.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/stream_buffer.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/stream_buffer.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/tasks.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/tasks.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/tasks.s
-	@echo ... D_/pico/pico-FreeRTOS/Source/timers.obj
-	@echo ... D_/pico/pico-FreeRTOS/Source/timers.i
-	@echo ... D_/pico/pico-FreeRTOS/Source/timers.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/croutine.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/croutine.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/croutine.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/event_groups.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/event_groups.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/event_groups.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/list.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/list.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/list.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/portable/MemMang/heap_1.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/port.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/queue.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/queue.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/queue.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/stream_buffer.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/tasks.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/tasks.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/tasks.s
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/timers.obj
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/timers.i
+	@echo ... D_/pico/pico-FreeRTOS-SMP/Source/timers.s
 	@echo ... D_/pico/pico-sdk/src/common/pico_sync/critical_section.obj
 	@echo ... D_/pico/pico-sdk/src/common/pico_sync/critical_section.i
 	@echo ... D_/pico/pico-sdk/src/common/pico_sync/critical_section.s
@@ -1658,6 +1685,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... main_blinky.obj
+	@echo ... main_blinky.i
+	@echo ... main_blinky.s
 .PHONY : help
 
 
@@ -1669,6 +1699,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d D:\pico\pico-FreeRTOS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\pico\pico-FreeRTOS-SMP\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

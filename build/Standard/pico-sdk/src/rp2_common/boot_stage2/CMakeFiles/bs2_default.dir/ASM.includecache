@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h
+D:/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h
 FreeRTOSConfig.h
-D:/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/include/FreeRTOSConfig.h
+D:/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/include/FreeRTOSConfig.h
 rp2040_config.h
-D:/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h
+D:/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h
 
-D:/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h
+D:/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h
 
 D:/pico/pico-sdk/src/boards/include/boards/pico.h
 
@@ -31,7 +31,7 @@ D:/pico/pico-sdk/src/rp2_common/boot_stage2/include/boot_stage2/pico/config.h
 D:/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
 
 generated/pico_base/pico/config_autogen.h
-D:/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h
+D:/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h
 -
 D:/pico/pico-sdk/src/boards/include/boards/pico.h
 -

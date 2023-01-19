@@ -61,10 +61,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS\examples
+CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS-SMP\examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS\build
+CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS-SMP\build
 
 # Utility rule file for cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.
 
@@ -75,8 +75,8 @@ Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw4
 
 
 Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h: D:/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver && ..\..\..\..\..\pioasm\pioasm.exe -o c-sdk D:/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio D:/pico/pico-FreeRTOS/build/Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver && ..\..\..\..\..\pioasm\pioasm.exe -o c-sdk D:/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio D:/pico/pico-FreeRTOS-SMP/build/Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: Standard/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
@@ -90,10 +90,10 @@ Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw4
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 
 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean:
-	cd /d D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\cmake_clean.cmake
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\cmake_clean.cmake
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 
 Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS\examples D:\pico\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS\build D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS\build\Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS-SMP\examples D:\pico\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS-SMP\build D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver D:\pico\pico-FreeRTOS-SMP\build\Standard\pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Standard/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 

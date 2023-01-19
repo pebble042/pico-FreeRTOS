@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "D:/pico/pico-FreeRTOS/Source/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h"
+#include "D:/pico/pico-FreeRTOS-SMP/Source/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h"
 #include "D:/pico/pico-sdk/src/boards/include/boards/pico.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:

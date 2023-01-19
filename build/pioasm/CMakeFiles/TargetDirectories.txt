@@ -1,3 +1,3 @@
-D:/pico/pico-FreeRTOS/build/pioasm/CMakeFiles/pioasm.dir
-D:/pico/pico-FreeRTOS/build/pioasm/CMakeFiles/edit_cache.dir
-D:/pico/pico-FreeRTOS/build/pioasm/CMakeFiles/rebuild_cache.dir
+D:/pico/pico-FreeRTOS-SMP/build/pioasm/CMakeFiles/pioasm.dir
+D:/pico/pico-FreeRTOS-SMP/build/pioasm/CMakeFiles/edit_cache.dir
+D:/pico/pico-FreeRTOS-SMP/build/pioasm/CMakeFiles/rebuild_cache.dir

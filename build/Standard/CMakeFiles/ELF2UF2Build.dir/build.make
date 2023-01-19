@@ -61,10 +61,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS\examples
+CMAKE_SOURCE_DIR = D:\pico\pico-FreeRTOS-SMP\examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS\build
+CMAKE_BINARY_DIR = D:\pico\pico-FreeRTOS-SMP\build
 
 # Utility rule file for ELF2UF2Build.
 
@@ -82,51 +82,51 @@ Standard/CMakeFiles/ELF2UF2Build-complete: Standard/elf2uf2/src/ELF2UF2Build-sta
 Standard/CMakeFiles/ELF2UF2Build-complete: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 Standard/CMakeFiles/ELF2UF2Build-complete: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 Standard/CMakeFiles/ELF2UF2Build-complete: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS/build/Standard/CMakeFiles
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/CMakeFiles/ELF2UF2Build-complete
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS-SMP/build/Standard/CMakeFiles
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/CMakeFiles/ELF2UF2Build-complete
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
 
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d D:\pico\pico-FreeRTOS\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
 
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-sdk/tools/elf2uf2
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS/build/elf2uf2
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS/build/Standard/elf2uf2
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/tmp
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-sdk/tools/elf2uf2
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS-SMP/build/elf2uf2
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/tmp
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: Standard/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" "-GMinGW Makefiles" D:/pico/pico-sdk/tools/elf2uf2
-	cd /d D:\pico\pico-FreeRTOS\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" "-GMinGW Makefiles" D:/pico/pico-sdk/tools/elf2uf2
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\elf2uf2 && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/pico/pico-FreeRTOS-SMP/build/Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 
 Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build: Standard/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'ELF2UF2Build'"
-	cd /d D:\pico\pico-FreeRTOS\build\elf2uf2 && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\pico\pico-FreeRTOS-SMP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'ELF2UF2Build'"
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\elf2uf2 && $(MAKE)
 
 ELF2UF2Build: Standard/CMakeFiles/ELF2UF2Build
 ELF2UF2Build: Standard/CMakeFiles/ELF2UF2Build-complete
@@ -147,10 +147,10 @@ Standard/CMakeFiles/ELF2UF2Build.dir/build: ELF2UF2Build
 .PHONY : Standard/CMakeFiles/ELF2UF2Build.dir/build
 
 Standard/CMakeFiles/ELF2UF2Build.dir/clean:
-	cd /d D:\pico\pico-FreeRTOS\build\Standard && $(CMAKE_COMMAND) -P CMakeFiles\ELF2UF2Build.dir\cmake_clean.cmake
+	cd /d D:\pico\pico-FreeRTOS-SMP\build\Standard && $(CMAKE_COMMAND) -P CMakeFiles\ELF2UF2Build.dir\cmake_clean.cmake
 .PHONY : Standard/CMakeFiles/ELF2UF2Build.dir/clean
 
 Standard/CMakeFiles/ELF2UF2Build.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS\examples D:\pico\pico-FreeRTOS\examples\Standard D:\pico\pico-FreeRTOS\build D:\pico\pico-FreeRTOS\build\Standard D:\pico\pico-FreeRTOS\build\Standard\CMakeFiles\ELF2UF2Build.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\pico\pico-FreeRTOS-SMP\examples D:\pico\pico-FreeRTOS-SMP\examples\Standard D:\pico\pico-FreeRTOS-SMP\build D:\pico\pico-FreeRTOS-SMP\build\Standard D:\pico\pico-FreeRTOS-SMP\build\Standard\CMakeFiles\ELF2UF2Build.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Standard/CMakeFiles/ELF2UF2Build.dir/depend
 

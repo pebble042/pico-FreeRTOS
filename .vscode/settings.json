@@ -1,9 +1,11 @@
 {
     "cmake.sourceDirectory": "${workspaceFolder}/examples",
     "cmake.environment": {
-        "FREERTOS_KERNEL_PATH": "D:\\pico\\pico-FreeRTOS\\Source"
+        "FREERTOS_KERNEL_PATH": "D:\\pico\\pico-FreeRTOS-SMP\\Source"
     },
     "cmake.touchbar.advanced": {
     
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "commentTranslate.multiLineMerge": true
 }

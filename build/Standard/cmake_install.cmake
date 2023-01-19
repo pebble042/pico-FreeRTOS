@@ -1,4 +1,4 @@
-# Install script for directory: D:/pico/pico-FreeRTOS/examples/Standard
+# Install script for directory: D:/pico/pico-FreeRTOS-SMP/examples/Standard
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/pico/pico-FreeRTOS/build/Standard/FREERTOS_KERNEL/cmake_install.cmake")
-  include("D:/pico/pico-FreeRTOS/build/Standard/pico-sdk/cmake_install.cmake")
+  include("D:/pico/pico-FreeRTOS-SMP/build/Standard/FREERTOS_KERNEL/cmake_install.cmake")
+  include("D:/pico/pico-FreeRTOS-SMP/build/Standard/pico-sdk/cmake_install.cmake")
 
 endif()
 
